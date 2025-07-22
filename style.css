@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  header {
+    margin-bottom: 40px;
+  }
+
+
+  h1 {
+    font-size: 64px;
+    margin: 0;
+  }
+
+  .subtitle {
+    letter-spacing: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .cta {
+    margin-top: 40px;
+  }
+
+  .cta button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .cta button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .tagline {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #aaa;
+  }
+
+
+  .socials {
+  margin: 1em 0;;
+    display: flex;
+    gap: 20px;
+  }
+
+  .socials a img {
+    width: 32px;
+    height: 32px;
+    filter: invert(1);
+    transition: transform 0.2s;
+  }
+
+  .socials a img:hover {
+    transform: scale(1.2);
+  }
+
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    body {
+      height: auto;
+      min-height: 100vh;
+      padding: 20px 5px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    .subtitle {
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+    .tagline {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    .cta button {
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+    .socials {
+      gap: 12px;
+    }
+    .socials a img {
+      width: 24px;
+      height: 24px;
+    }
+    header img.badge {
+      max-width: 120px;
+      width: 80vw;
+      height: auto;
+    }
+    main {
+      width: 100%;
+    }
+  }
